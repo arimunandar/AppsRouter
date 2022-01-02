@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AppsRouter"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A CocoaPods library written in Swift"
 
   spec.description  = "This CocoaPods library helps you perform navigation."
@@ -16,4 +16,6 @@ Pod::Spec.new do |spec|
   spec.source        = { :git => "https://github.com/arimunandar/AppsRouter.git", :tag => "#{spec.version}" }
   spec.source_files  = "AppsRouter/**/*.{h,m,swift}"
 
+  spec.frameworks = 'UIKit'
+  spec.dependency 'Swinject'
 end
