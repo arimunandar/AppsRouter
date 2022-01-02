@@ -20,6 +20,14 @@
 		70B897452781AC1A0033E2B6 /* AppsRouterExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B897442781AC1A0033E2B6 /* AppsRouterExamplesTests.swift */; };
 		70B8974F2781AC1A0033E2B6 /* AppsRouterExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B8974E2781AC1A0033E2B6 /* AppsRouterExamplesUITests.swift */; };
 		70B897512781AC1A0033E2B6 /* AppsRouterExamplesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B897502781AC1A0033E2B6 /* AppsRouterExamplesUITestsLaunchTests.swift */; };
+		70B897702781B0260033E2B6 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B8975D2781B0260033E2B6 /* AppRouter.swift */; };
+		70B897712781B0260033E2B6 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B8975E2781B0260033E2B6 /* AppModule.swift */; };
+		70B897732781B0260033E2B6 /* IAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B897602781B0260033E2B6 /* IAppRouter.swift */; };
+		70B897742781B0260033E2B6 /* AppPresentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B897612781B0260033E2B6 /* AppPresentType.swift */; };
+		70B897752781B0260033E2B6 /* AppParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B897622781B0260033E2B6 /* AppParameter.swift */; };
+		70B8977A2781B0260033E2B6 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B897692781B0260033E2B6 /* Extension+UIViewController.swift */; };
+		70B8977B2781B0260033E2B6 /* Extension+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B8976A2781B0260033E2B6 /* Extension+UINavigationController.swift */; };
+		70B8977C2781B0260033E2B6 /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B8976B2781B0260033E2B6 /* Extension+UIApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +73,14 @@
 		70B8974A2781AC1A0033E2B6 /* AppsRouterExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppsRouterExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B8974E2781AC1A0033E2B6 /* AppsRouterExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsRouterExamplesUITests.swift; sourceTree = "<group>"; };
 		70B897502781AC1A0033E2B6 /* AppsRouterExamplesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsRouterExamplesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70B8975D2781B0260033E2B6 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		70B8975E2781B0260033E2B6 /* AppModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		70B897602781B0260033E2B6 /* IAppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAppRouter.swift; sourceTree = "<group>"; };
+		70B897612781B0260033E2B6 /* AppPresentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPresentType.swift; sourceTree = "<group>"; };
+		70B897622781B0260033E2B6 /* AppParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppParameter.swift; sourceTree = "<group>"; };
+		70B897692781B0260033E2B6 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		70B8976A2781B0260033E2B6 /* Extension+UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UINavigationController.swift"; sourceTree = "<group>"; };
+		70B8976B2781B0260033E2B6 /* Extension+UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +150,7 @@
 		70B8970F2781ABA50033E2B6 /* AppsRouter */ = {
 			isa = PBXGroup;
 			children = (
+				70B8975B2781B0260033E2B6 /* Classes */,
 				70B897102781ABA50033E2B6 /* AppsRouter.h */,
 				70B897112781ABA50033E2B6 /* AppsRouter.docc */,
 			);
@@ -177,6 +194,37 @@
 				70B897502781AC1A0033E2B6 /* AppsRouterExamplesUITestsLaunchTests.swift */,
 			);
 			path = AppsRouterExamplesUITests;
+			sourceTree = "<group>";
+		};
+		70B8975B2781B0260033E2B6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				70B8975C2781B0260033E2B6 /* AppRouter */,
+				70B897682781B0260033E2B6 /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		70B8975C2781B0260033E2B6 /* AppRouter */ = {
+			isa = PBXGroup;
+			children = (
+				70B8975D2781B0260033E2B6 /* AppRouter.swift */,
+				70B8975E2781B0260033E2B6 /* AppModule.swift */,
+				70B897602781B0260033E2B6 /* IAppRouter.swift */,
+				70B897612781B0260033E2B6 /* AppPresentType.swift */,
+				70B897622781B0260033E2B6 /* AppParameter.swift */,
+			);
+			path = AppRouter;
+			sourceTree = "<group>";
+		};
+		70B897682781B0260033E2B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				70B897692781B0260033E2B6 /* Extension+UIViewController.swift */,
+				70B8976A2781B0260033E2B6 /* Extension+UINavigationController.swift */,
+				70B8976B2781B0260033E2B6 /* Extension+UIApplication.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,7 +427,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70B897732781B0260033E2B6 /* IAppRouter.swift in Sources */,
+				70B897702781B0260033E2B6 /* AppRouter.swift in Sources */,
 				70B897122781ABA50033E2B6 /* AppsRouter.docc in Sources */,
+				70B897742781B0260033E2B6 /* AppPresentType.swift in Sources */,
+				70B8977A2781B0260033E2B6 /* Extension+UIViewController.swift in Sources */,
+				70B8977B2781B0260033E2B6 /* Extension+UINavigationController.swift in Sources */,
+				70B897752781B0260033E2B6 /* AppParameter.swift in Sources */,
+				70B8977C2781B0260033E2B6 /* Extension+UIApplication.swift in Sources */,
+				70B897712781B0260033E2B6 /* AppModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +697,7 @@
 		70B897252781ABA60033E2B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -656,6 +713,7 @@
 		70B897262781ABA60033E2B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
