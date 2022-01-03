@@ -125,10 +125,15 @@ public extension AppRouter {
     }
 
     func presentView(view: UIViewController) {
+        view.routePath = _AppModule?.routePath
+
         if let last = UIApplication.getActiveNavigation()?.viewControllers.last {
             appModuleStacks.append(AppModuleStack(viewController: last, routerPath: last.routePath, onDismiss: onDismiss))
         }
-        view.routePath = _AppModule?.routePath
+
+        if let count = UIApplication.getActiveNavigation()?.viewControllers.count {
+            appModuleStacks.removeSubrange(count..<appModuleStacks.count)
+        }
 
         guard window?.rootViewController != nil else {
             if let _window = UIApplication.shared.keyWindow {
