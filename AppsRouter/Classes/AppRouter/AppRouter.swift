@@ -163,6 +163,7 @@ public extension AppRouter {
                 UIApplication.switchRootViewController(rootViewController: navigation, animated: true)
             }
         case .push:
+            view.hidesBottomBarWhenPushed = true
             UIApplication.getActiveNavigation()?.pushViewController(viewController: view, animated: true, completion: { [weak self] in
                 self?.onPresent?()
             })
